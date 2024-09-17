@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f6f7f9;
+  }
+  
+  .card {
+    position: relative;
+    width: 60%;
+    height: 160px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  .card1{
+    margin: 50px 50px 20px 50px;
+  }
+
+  .card2{
+    margin: 20px 50px 50px 50px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    margin: 17px 0px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 1em;
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    background-color: #dce1e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .boxn{
+    margin-top: 80px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .submit-btn:hover {
+    background-color: #bcc4c9;
+  }
+  
+  /* Plus Icon Styling */
+  .plus-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .plus-icon:hover {
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 90%; /* Adjust width for tablets */
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+  
+    h2 {
+      font-size: 1.3em; /* Further reduce heading size */
+    }
+  
+    h3 {
+      font-size: 1em;
+    }
+  
+    p {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%; /* Full width for mobile screens */
+      margin: 10px 0;
+    }
+  
+    h2 {
+      font-size: 1.2em; /* Smaller headings on mobile */
+    }
+  
+    h3 {
+      font-size: 0.95em;
+    }
+  
+    p {
+      font-size: 0.85em;
+    }
+  
+    .submit-btn {
+      width: 100%; /* Make submit button full-width on mobile */
+      padding: 15px;
+    }
+  }
